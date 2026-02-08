@@ -62,10 +62,10 @@ export const useQuizLogic = () => {
           korToEngMap[word.kor].push(word.eng);
         });
 
-        questions = allWords.map(word => ({
-          question: word.kor,
-          correct: word.eng,
-          synonyms: korToEngMap[word.kor]
+        questions = Object.keys(korToEngMap).map(kor => ({
+          question: kor,
+          correct: korToEngMap[kor][0],
+          synonyms: korToEngMap[kor]
         })).sort(() => Math.random() - 0.5);
       }
     } else if (isEngToKor) {

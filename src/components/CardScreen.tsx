@@ -62,16 +62,15 @@ export const CardScreen = ({
             <h2 className="text-5xl font-bold text-gray-800 mb-8">{card.question}</h2>
 
             {showAnswer && (
-              <div className="mt-8 pt-8 border-t-2 border-gray-200">
+              <div className="mt-8 pt-8 border-t-4 border-purple-200">
                 {card.synonyms && card.synonyms.length > 1 ? (
                   <div>
-                    <h3 className="text-4xl font-bold mb-4" style={{ color: '#F0CEF4' }}>
+                    <h3 className="text-5xl font-bold mb-4" style={{ color: '#29233D' }}>
                       {card.synonyms.join(', ')}
                     </h3>
-                    <p className="text-sm text-gray-500">모든 동의어</p>
                   </div>
                 ) : (
-                  <h3 className="text-4xl font-bold" style={{ color: '#F0CEF4' }}>
+                  <h3 className="text-5xl font-black" style={{ color: '#29233D' }}>
                     {card.correct}
                   </h3>
                 )}
