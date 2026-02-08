@@ -49,7 +49,13 @@ export const CardScreen = ({
         </div>
 
         <button
-          onClick={!showAnswer ? onShowAnswer : undefined}
+          onClick={() => {
+            if (!showAnswer) {
+              onShowAnswer();
+            } else {
+              onNext();
+            }
+          }}
           className="w-full bg-white rounded-2xl shadow-lg p-8 mb-6 min-h-64 flex flex-col justify-center hover:shadow-xl transition cursor-pointer"
         >
           <div className="text-center">
@@ -73,15 +79,6 @@ export const CardScreen = ({
             )}
           </div>
         </button>
-
-        {showAnswer && (
-          <button
-            onClick={onNext}
-            className="w-full py-4 rounded-2xl bg-green-500 text-white font-bold text-lg shadow-lg hover:bg-green-600 transition"
-          >
-            {currentCard + 1 < totalCards ? '다음 카드' : '학습 완료'}
-          </button>
-        )}
       </div>
     </div>
   );
