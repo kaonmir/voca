@@ -1,4 +1,3 @@
-import { BookOpen } from 'lucide-react';
 import { VocabData } from '../types';
 
 interface CategorySelectionProps {
@@ -15,7 +14,11 @@ export const CategorySelection = ({ vocabData, onSelectCategory }: CategorySelec
     <div className="min-h-screen bg-gradient-to-br from-purple-100 to-pink-100 p-4">
       <div className="max-w-2xl mx-auto pt-8">
         <div className="text-center mb-8">
-          <BookOpen className="w-16 h-16 mx-auto mb-4" style={{ color: '#F0CEF4' }} />
+          <img
+            src="/love.jpg"
+            alt="Love"
+            className="w-24 h-24 mx-auto mb-4 rounded-full object-cover shadow-lg"
+          />
           <h1 className="text-3xl font-bold text-gray-800 mb-2">영어 단어 암기</h1>
           <p className="text-gray-600">학습할 카테고리를 선택하세요</p>
         </div>
