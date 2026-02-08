@@ -1,4 +1,4 @@
-import { BarChart3, CheckCircle, XCircle } from 'lucide-react';
+import { CheckCircle, XCircle } from 'lucide-react';
 import { Answer } from '../types';
 
 interface ResultScreenProps {
@@ -16,7 +16,11 @@ export const ResultScreen = ({ score, answers, onRestart }: ResultScreenProps) =
     <div className="min-h-screen bg-gradient-to-br from-purple-100 to-pink-100 p-4">
       <div className="max-w-2xl mx-auto pt-8">
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-6 text-center">
-          <BarChart3 className="w-16 h-16 mx-auto mb-4" style={{ color: '#F0CEF4' }} />
+          <img
+            src="/love2.jpg"
+            alt="Result"
+            className="w-24 h-24 mx-auto mb-4 rounded-full object-cover shadow-lg"
+          />
           <h1 className="text-3xl font-bold text-gray-800 mb-4">시험 완료!</h1>
 
           <div className="text-6xl font-bold mb-2" style={{ color: '#F0CEF4' }}>
@@ -25,18 +29,6 @@ export const ResultScreen = ({ score, answers, onRestart }: ResultScreenProps) =
           <p className="text-gray-600 text-lg mb-6">
             {score} / {totalAnswered} 정답
           </p>
-
-          {percentage >= 80 ? (
-            <div className="flex items-center justify-center gap-2 text-green-600">
-              <CheckCircle className="w-6 h-6" />
-              <span className="font-semibold">훌륭해요!</span>
-            </div>
-          ) : (
-            <div className="flex items-center justify-center gap-2 text-orange-600">
-              <XCircle className="w-6 h-6" />
-              <span className="font-semibold">조금 더 연습해보세요!</span>
-            </div>
-          )}
         </div>
 
         {wrongAnswers.length > 0 && (

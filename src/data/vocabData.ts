@@ -290,16 +290,14 @@ export const VOCAB_DATA: VocabData = {
       "probe": "규명하다",
       "scrutinize": "조사하다, 검토하다",
       "overhaul": "조사하다, 검토하다",
-      "oversee": "감독하다"
-    },
-    {
+      "oversee": "감독하다",
       "deliberate": "숙고하다, 의도적인, 신중한",
       "ponder": "숙고하다",
       "contemplate": "숙고하다",
       "meditate": "숙고하다",
       "retrieve": "되찾다",
       "restore": "되찾다"
-    }
+    },
   ],
   "독해어휘": [
     {
