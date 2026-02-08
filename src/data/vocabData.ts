@@ -370,16 +370,16 @@ export const VOCAB_DATA: VocabData = {
       "cut back (on)": "~을 줄이다",
       "derive from": "~에서 유래하다",
       "do away with": "~을 없애다, ~폐지하다",
-      "end up": "결국 ~하게 되다"
-    },
-    {
+      "end up": "결국 ~하게 되다",
       "fill out": "서류에 기입하다, 작성하다",
       "from time to time": "때때로, 가끔",
       "get across": "~을 이해시키다, ~건너다",
       "get along with": "~와 사이좋게 지내다",
       "get out of": "~에서 벗어나다, 탈출하다, 피하다",
       "get over": "~을 극복하다, ~을 회복하다",
-      "get through": "~을 통과하다, ~을 끝내다, ~을 극복하다",
+      "get through": "~을 통과하다, ~을 끝내다, ~을 극복하다"
+    },
+    {
       "go over": "~을 검토하다, ~을 조사하다",
       "go through": "~을 통과하다, ~을 겪다, ~을 살펴보다",
       "in accordance with": "~에 따라",
@@ -400,9 +400,7 @@ export const VOCAB_DATA: VocabData = {
       "out of date": "구식의",
       "pay off": "성과를 내다, 이익이 되다",
       "put off": "~을 미루다, 연기하다",
-      "put up with": "~을 참다, ~견디다"
-    },
-    {
+      "put up with": "~을 참다, ~견디다",
       "rule out": "~을 제외시키다, ~배제하다",
       "stand for": "~을 상징하다, ~지지하다",
       "take after": "~을 닮다",
